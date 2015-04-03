@@ -18,7 +18,7 @@ NewsReader.Views.FeedIndex = Backbone.View.extend ({
   },
 
   remove: function () {
-    this.removeSubviews;
+    this.removeSubviews();
     Backbone.View.prototype.remove.call(this);
   },
 
