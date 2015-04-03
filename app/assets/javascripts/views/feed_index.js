@@ -23,7 +23,7 @@ NewsReader.Views.FeedIndex = Backbone.View.extend ({
   },
 
   render: function () {
-    this.removeSubviews;
+    this.removeSubviews();
     this.$el.html(this.template());
     this.collection.each(function(feed) {
       var view = new NewsReader.Views.FeedIndexItem({model: feed});
